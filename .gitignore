@@ -1,0 +1,36 @@
+# Node / general
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist/
+build/
+.cache/
+.DS_Store
+Thumbs.db
+.vercel/
+.turbo/
+coverage/
+logs
+*.log
+*.sqlite
+
+# Env
+.env
+.env.*.local
+.env.local
+.envrc
+*.env
+uploads/
+backend/src/uploads/
+
+# Editor
+.vscode/
+.idea/
+
+# Next.js
+.next/
+out/
+.next-static/
+.next-cache/

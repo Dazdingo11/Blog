@@ -1,0 +1,16 @@
+// backend/.sequelizerc
+const path = require("path");
+
+module.exports = {
+  // Path to your Sequelize configuration file
+  config: path.resolve(__dirname, "src/db/config/config.js"),
+
+  // Where Sequelize will look for model definitions
+  "models-path": path.resolve(__dirname, "src/db/models"),
+
+  // Where Sequelize will look for migrations
+  "migrations-path": path.resolve(__dirname, "src/db/migrations"),
+
+  // Where Sequelize will look for seeders (optional)
+  "seeders-path": path.resolve(__dirname, "src/db/seeders"),
+};
