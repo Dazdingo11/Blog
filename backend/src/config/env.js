@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const env = (key, fallback) => process.env[key] ?? fallback;
 
 const nodeEnv = env('NODE_ENV', 'development');
@@ -7,7 +9,6 @@ module.exports = {
   port: Number(env('PORT', 3001)),
 
   db: {
-    
     username: env('DB_USER', env('MYSQLUSER', 'root')),
     password: env(
       'DB_PASSWORD',
