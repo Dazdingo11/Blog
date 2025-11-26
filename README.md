@@ -88,6 +88,8 @@ DB_PORT=3306
 DB_USER=root
 DB_PASSWORD=devpass
 DB_NAME=tech_blog
+# Or use a single connection string (overrides the above):
+# DATABASE_URL=mysql://user:pass@host:3306/tech_blog
 
 JWT_ACCESS_SECRET=change-me
 JWT_REFRESH_SECRET=change-me-too
@@ -100,6 +102,7 @@ CLIENT_ORIGIN=http://localhost:3000
 **Frontend (`frontend/.env.local`):**
 ```
 NEXT_PUBLIC_API_BASE_URL=http://localhost:3001/api
+# Or use NEXT_PUBLIC_API_BASE instead; either works.
 ```
 Use only one of `NEXT_PUBLIC_API_BASE_URL` or `NEXT_PUBLIC_API_BASE`.
 
